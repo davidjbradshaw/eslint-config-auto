@@ -1,0 +1,79 @@
+{
+  "name": "eslint-config-auto",
+  "version": "0.0.1",
+  "author": "David J. Bradshaw",
+  "description": "Automatically configure esLint based on project dependancies",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidjbradshaw/eslint-config-auto.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "ci-test": "npm run test",
+    "eslint": "eslint --color  *.{js,json,md} rules/**.js lib/**.js",
+    "eslint:fix": "eslint --color --fix  *.{js,md} rules/**.js lib/**.js",
+    "prepublishOnly": "eslint-find-rules --unused --no-core",
+    "test": "npm run eslint && npm run prepublishOnly"
+  },
+  "keywords": [
+    "airbnb",
+    "config",
+    "eslint",
+    "eslintconfig",
+    "javascript",
+    "smartpension"
+  ],
+  "dependencies": {
+    "@typescript-eslint/parser": "^3.1.0",
+    "arrify": "^2.0.1",
+    "babel-eslint": "^10.1.0",
+    "cosmiconfig": "^6.0.0",
+    "eslint-config-adjunct": "latest",
+    "lodash": "^4.17.15",
+    "mkdir": "0.0.2",
+    "mkdirp": "^1.0.4",
+    "ramda": "^0.27.0",
+    "read-pkg-up": "^7.0.1",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-find-rules": "^3.5.0",
+    "eslint-plugin-array-func": "^3.1.6",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-html": "^6.0.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-json-format": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-lodash": "^7.1.0",
+    "eslint-plugin-lodash-fp": "^2.2.0-a1",
+    "eslint-plugin-markdown": "^1.0.2",
+    "eslint-plugin-no-constructor-bind": "^2.0.0",
+    "eslint-plugin-no-secrets": "^0.5.4",
+    "eslint-plugin-no-unsanitized": "^3.1.1",
+    "eslint-plugin-no-use-extend-native": "^0.5.0",
+    "eslint-plugin-optimize-regex": "^1.2.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-ramda": "^2.5.1",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "eslint-plugin-scanjs-rules": "^0.2.1",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-simple-import-sort": "^5.0.3",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "eslint-plugin-switch-case": "^1.1.2",
+    "eslint-plugin-unicorn": "^20.1.0",
+    "husky": "^4.2.5",
+    "in-publish": "^2.0.1",
+    "prettier": "^2.0.5",
+    "prettier-cli": "^0.1.0",
+    "react": "^16.13.1",
+    "safe-publish-latest": "^1.1.4"
+  },
+  "engines": {
+    "node": ">= 8"
+  }
+}
