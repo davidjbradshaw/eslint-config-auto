@@ -34,3 +34,17 @@ You can now include `html`, `json` and `markdown` in the list of files passed to
 ## Install Dependencies
 
 After you have configured `eslint` to include this package, the first time you run `eslint` it will output the `npm` command to install the dependencies required for your project. Cut'n'paste this command into the console, and you are then ready to start linting.
+
+## Rules
+
+### AirBNB
+
+The most appropreate version of the AirBNB eslint config will be automatically selected
+
+### Adjunct
+
+The [eslint-config-adjunct](https://github.com/davidjbradshaw/eslint-config-auto/blob/master/README.md) config is included, this will install a range of plugins based on your project config.
+
+### TypeScript
+
+If you project included TypeScript, then the rules will adapt to lint typescipt files.
