@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-auto",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "David J. Bradshaw",
   "description": "Automatically configure esLint based on project dependancies",
   "repository": {
