@@ -47,4 +47,4 @@ The [eslint-config-adjunct](https://github.com/davidjbradshaw/eslint-config-auto
 
 ### TypeScript
 
-If you project included TypeScript, then the rules will adapt to lint typescipt files.
+If you project includes TypeScript, then the rules will adapt to lint typescipt files.
