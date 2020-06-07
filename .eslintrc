@@ -1,0 +1,18 @@
+{
+  "extends": ["./index.js"],
+  "rules": {
+    "security/detect-non-literal-fs-filename": "off"
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "generators": false,
+      "objectLiteralDuplicateProperties": false
+    }
+  }
+}
