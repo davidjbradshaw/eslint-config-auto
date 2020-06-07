@@ -1,6 +1,6 @@
 # eslint-config-auto
 
-This package contains the linting rules for JavaScript projects at Smart Pension. When run it will read the contents of your project's `package.json` file and auto configure itself with the appropreate esLint rules.
+This config will automatically configure the *airbnb* esLint rules and a range of other plugins, based on the contents of your projects `package.json` file.
 
 ## Install
 
