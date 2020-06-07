@@ -1,4 +1,4 @@
-eslint-config-auto
+# eslint-config-auto
 
 This package contains the linting rules for JavaScript projects at Smart Pension. When run it will read the contents of your project's `package.json` file and auto configure itself with the appropreate esLint rules.
 
