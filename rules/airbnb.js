@@ -1,9 +1,7 @@
-const { hasAnyDep } = require('../lib/utils')
+const configs = ['airbnb', 'airbnb/hooks']
 
-const hasReact = hasAnyDep('react')
-const configs = ['airbnb']
-
-if (hasReact) configs.push('airbnb/hooks')
+// eslint-disable-next-line no-console
+console.log(configs.map((config) => `  eslint-config-${config}`).join('\n'))
 
 module.exports = {
   extends: configs,
