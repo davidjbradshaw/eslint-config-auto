@@ -1,4 +1,4 @@
-const adjunct = require('eslint-config-adjunct/packages')
+const adjunct = require('eslint-config-adjunct/configs')
 
 const checkMissing = require('./lib/missing')
 const showLoaded = require('./lib/loaded')
@@ -17,17 +17,20 @@ checkMissing(
   adjunct.extraInstallPackage,
   configs
 )
+
 showLoaded(airbnbDependentcies, configs)
 
-const smartConfig = {
+const autoConfig = {
   extends: configs.map((config) => require.resolve(`./rules/${config}`)),
-  parser: hasTypescript ? '@typescript-eslint/parser' : 'babel-eslint',
+  parser: 'babel-eslint',
 }
 
 if (hasTypescript) {
-  smartConfig.parserOptions = {
+  autoConfig.parserOptions = {
     project: './tsconfig.json',
   }
 }
 
-module.exports = smartConfig
+// console.log(autoConfig)
+
+module.exports = autoConfig
