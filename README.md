@@ -45,6 +45,30 @@ The most appropreate version of the AirBNB eslint config will be automatically s
 
 The [eslint-config-adjunct](https://github.com/davidjbradshaw/eslint-config-adjunct#plugins) config is included, this will install a range of plugins based on your project's dependancies.
 
+### Babel
+
+[TODO] If the project includes Babel, then [eslint-plugin-babel]() will be loaded and the parser will be set to `babel-eslint`.
+
+### Compat
+
+[TODO] If no transpiler is detected and `env.browser = true` in your `.eslintrc`, then [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat) is loaded.
+
+### Node
+
+[TODO] If `env.node = true` in your `.eslintrc` file, then [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node) is loaded.
+
+### React
+
+If a project contians React, then a React version of the AirBNB config will be used.
+
+### Prettier
+
+If prettier is installed, any rules that may conflict with Prettier will be disabled. The plugin should read you Prettier config from your project's root.
+
+- [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
+- [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
+
+The prettier configs for different eslint plugins are also automatically included based on which eslint plugins have been installed into your project.
 ### TypeScript
 
-If you project includes TypeScript, then the rules will adapt to lint typescipt files.
+If the project includes TypeScript, then the rules will adapt to lint typescipt files and the parser will be set to `@typescript-eslint/parser` for `ts` and `tsx` filetypes.
