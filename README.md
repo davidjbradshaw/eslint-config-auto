@@ -16,7 +16,7 @@ Create an `.eslintrc` file with the following contents.
 
 ```json
 {
-  "extends": ["eslint-config-auto"]
+  "extends": ["auto"]
 }
 ```
 
