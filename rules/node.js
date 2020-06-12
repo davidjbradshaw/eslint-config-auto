@@ -4,6 +4,8 @@ console.log('  eslint-plugin-node')
 module.exports = {
   extends: ['plugin:node/recommended'],
   rules: {
+    'node/no-unsupported-features/es-syntax': "off",
+
     // Rules not in recomended config
     'node/callback-return': 'off',
     'node/exports-style': 'off',
