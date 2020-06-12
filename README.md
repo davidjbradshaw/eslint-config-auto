@@ -7,7 +7,7 @@ This config will automatically configure the *airbnb* esLint rules and a range o
 To install this config, run the following command.
 
 ```sh
-yarn add eslint-config-auto --dev
+npm install eslint-config-auto --save-dev
 ```
 
 ## Configure
@@ -16,7 +16,7 @@ Create an `.eslintrc` file with the following contents.
 
 ```json
 {
-  "extends": ["eslint-config-auto"]
+  "extends": ["auto"]
 }
 ```
 
