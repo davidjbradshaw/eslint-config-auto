@@ -28,7 +28,7 @@
     "arrify": "^2.0.1",
     "babel-eslint": "^10.1.0",
     "cosmiconfig": "^6.0.0",
-    "eslint-config-adjunct": "> 4.6.1",
+    "eslint-config-adjunct": "latest",
     "eslint-config-airbnb-base": "^14.2.0",
     "lodash": "^4.17.15",
     "mkdir": "0.0.2",
