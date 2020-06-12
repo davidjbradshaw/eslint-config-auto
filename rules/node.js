@@ -28,5 +28,5 @@ module.exports = {
     'node/prefer-global/url-search-params': 'off',
     'node/prefer-promises/dns': 'off',
     'node/prefer-promises/fs': 'off',
-  }
+  },
 }
