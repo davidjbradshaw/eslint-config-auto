@@ -51,11 +51,11 @@ If the project includes Babel, then [eslint-plugin-babel]() will be loaded and t
 
 ### Compat
 
-[TODO] If no transpiler is detected and `env.browser = true` in your `.eslintrc`, then [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat) is loaded.
+If no transpiler is detected and `env.browser = true` in your `.eslintrc`, then [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat) is loaded.
 
 ### Node
 
-[TODO] If `env.node = true` in your `.eslintrc` file, then [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node) is loaded.
+If `env.node = true` in your `.eslintrc` file, then [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node) is loaded.
 
 ### React
 

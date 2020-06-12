@@ -5,14 +5,10 @@ const showLoaded = require('./lib/loaded')
 const { hasAnyDep } = require('./lib/utils')
 
 const { configs } = require('./configs')
+const plugins = require('./plugins')
 
-const plugins = []
-
-const hasBabel = hasAnyDep('babel')
 const hasReact = hasAnyDep('react')
 const hasTypescript = hasAnyDep('typescript')
-
-if (hasBabel || hasAnyDep('@babel/core')) plugins.push('babel')
 
 const airbnbDependentcies = ['import']
 if (hasReact) airbnbDependentcies.push('jsx-a11y', 'react', 'react-hooks')
