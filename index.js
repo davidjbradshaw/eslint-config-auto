@@ -6,14 +6,19 @@ const { hasAnyDep } = require('./lib/utils')
 
 const { configs } = require('./configs')
 
+const plugins = []
+
+const hasBabel = hasAnyDep('babel')
 const hasReact = hasAnyDep('react')
 const hasTypescript = hasAnyDep('typescript')
+
+if (hasBabel || hasAnyDep('@babel/core')) plugins.push('babel')
 
 const airbnbDependentcies = ['import']
 if (hasReact) airbnbDependentcies.push('jsx-a11y', 'react', 'react-hooks')
 
 checkMissing(
-  [...airbnbDependentcies, ...adjunct.rules],
+  [...airbnbDependentcies, ...adjunct.rules, ...plugins],
   adjunct.extraInstallPackage,
   configs
 )
@@ -21,7 +26,9 @@ checkMissing(
 showLoaded(airbnbDependentcies, configs)
 
 const autoConfig = {
-  extends: configs.map((config) => require.resolve(`./rules/${config}`)),
+  extends: [...plugins, ...configs].map((config) =>
+    require.resolve(`./rules/${config}`)
+  ),
   parser: 'babel-eslint',
 }
 

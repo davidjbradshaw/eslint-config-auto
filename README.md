@@ -47,7 +47,7 @@ The [eslint-config-adjunct](https://github.com/davidjbradshaw/eslint-config-adju
 
 ### Babel
 
-[TODO] If the project includes Babel, then [eslint-plugin-babel]() will be loaded and the parser will be set to `babel-eslint`.
+If the project includes Babel, then [eslint-plugin-babel]() will be loaded and the parser will be set to `babel-eslint`.
 
 ### Compat
 
