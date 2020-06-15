@@ -43,7 +43,7 @@ The most appropreate version of the AirBNB eslint config will be automatically s
 
 ### Adjunct
 
-The [eslint-config-adjunct](https://github.com/davidjbradshaw/eslint-config-adjunct#plugins) config is included, this will install a range of plugins based on your project's dependancies.
+The [eslint-config-adjunct](https://github.com/davidjbradshaw/eslint-config-adjunct#plugins) config is included, this will install a range of reasonable plugins based on your project's dependancies, that cover best practices, popular utility librarys, security and testing frameworks.
 
 ### Babel
 
