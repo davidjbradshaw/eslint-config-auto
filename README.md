@@ -33,7 +33,7 @@ You can now include `html`, `json` and `markdown` in the list of files passed to
 
 ## Install Dependencies
 
-After you have configured `eslint` to include this package, the first time you run `eslint` it will output the `npm` command to install the dependencies required for your project. Cut'n'paste this command into the console, and you are then ready to start linting.
+After you have configured `eslint` to include this package, the first time you run `eslint` it will output the `npm` command to install the dependencies required for your project. Copy and paste this command into the console, and you are then ready to start linting.
 
 ## Rules
 
