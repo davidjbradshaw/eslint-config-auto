@@ -4,7 +4,7 @@ const { hasAnyDep } = require('./lib/utils')
 
 const explorerSync = cosmiconfigSync('eslint')
 const eslintrc = explorerSync.search()
-const { env } = eslintrc.config
+const { env = {} } = eslintrc.config
 
 const hasBabel = hasAnyDep('babel') || hasAnyDep('@babel/core')
 
