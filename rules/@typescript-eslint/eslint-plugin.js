@@ -9,12 +9,9 @@ console.log(configs.map((config) => `  ${config.split(':')[1]}`).join('\n'))
 module.exports = {
   overrides: [
     {
-      files: ['*.ts{s}', '**/*.ts{s}'],
+      files: ['*.ts{x}', '**/*.ts{x}'],
       extends: configs,
+      parser: '@typescript-eslint/parser',
     },
   ],
-
-  parserOptions: {
-    project: './tsconfig.json',
-  },
 }
