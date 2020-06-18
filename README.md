@@ -30,6 +30,7 @@ You can now include `html`, `json` and `markdown` in the list of files passed to
   }
 }
 ```
+_ * if you have TypeScript installed you will need to remove any unused filetypes from the above._
 
 ## Install Dependencies
 
