@@ -13,10 +13,6 @@ module.exports = {
       extends: configs,
       rules: {
         '@typescript-eslint/naming-convention': 0, // conflicts with unicorn
-        'no-use-before-define': 0,
-        'import/extensions': 0,
-        'mport/no-unresolved': 0,
-        'react/jsx-filename-extension': 0,
 
         // Disable rules that need tsconfig
         '@typescript-eslint/dot-notation': 0,
