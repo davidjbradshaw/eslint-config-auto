@@ -2,10 +2,10 @@
 console.log('  eslint-plugin-node')
 
 module.exports = {
-  extends: ['plugin:node/recommended'],
   overrides: [
     {
       files: ['*.js', '**/*.js'],
+      extends: ['plugin:node/recommended'],
       rules: {
         'node/no-unsupported-features/es-syntax': 'off',
 
