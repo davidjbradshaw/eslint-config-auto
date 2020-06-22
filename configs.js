@@ -8,6 +8,4 @@ configs.push(hasAnyDep('react') ? 'airbnb' : 'airbnb-base')
 
 if (hasAnyDep('typescript')) configs.push('airbnb-typescript')
 
-configs.push('adjunct')
-
-module.exports = { configs }
+module.exports = configs
