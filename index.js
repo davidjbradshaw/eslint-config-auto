@@ -4,35 +4,35 @@ const checkMissing = require('./lib/missing')
 const showLoaded = require('./lib/loaded')
 const { hasAnyDep } = require('./lib/utils')
 
-const configs = require('./configs')
-const plugins = require('./plugins')
-const parsers = require('./parsers')
+const overridesRules = require('./rules/overrides')
+const configs = require('./detect/configs')
+const parsers = require('./detect/parsers')
+const plugins = require('./detect/plugins')
 
 const hasReact = hasAnyDep('react')
-const hasTypescript = hasAnyDep('typescript')
 
-const airbnbDependentcies = ['import']
-if (hasReact) airbnbDependentcies.push('jsx-a11y', 'react', 'react-hooks')
+// Workaround VS Code trying to run this file twice!
+if (!global.hasAutoConfigLoaded) {
+  const airbnbDependentcies = ['import']
+  if (hasReact) airbnbDependentcies.push('jsx-a11y', 'react', 'react-hooks')
 
-checkMissing(
-  [...airbnbDependentcies, ...adjunct.rules, ...plugins],
-  adjunct.extraInstallPackage,
-  configs,
-  parsers
-)
+  checkMissing(
+    [...airbnbDependentcies, ...adjunct.rules, ...plugins],
+    adjunct.extraInstallPackage,
+    configs,
+    parsers
+  )
 
-showLoaded(airbnbDependentcies, configs)
+  showLoaded(airbnbDependentcies)
 
-const autoConfig = {
-  extends: [...parsers, ...plugins, ...configs, 'adjunct'].map((config) =>
-    require.resolve(`./rules/${config}`)
-  ),
+  global.hasAutoConfigLoaded = true
 }
 
-if (hasTypescript) {
-  autoConfig.parserOptions = {
-    project: './tsconfig.json',
-  }
+const autoConfig = {
+  extends: [...parsers, ...plugins, ...configs].map((config) =>
+    require.resolve(`./rules/${config}`)
+  ),
+  ...overridesRules,
 }
 
 // console.log(autoConfig)
