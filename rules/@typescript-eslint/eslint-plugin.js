@@ -9,7 +9,7 @@ console.log(configs.map((config) => `  ${config.split(':')[1]}`).join('\n'))
 module.exports = {
   overrides: [
     {
-      files: ['**.ts', '**.tsx'],
+      files: ['*.ts', '*.tsx', '*.d.ts'],
       extends: configs,
       parser: '@typescript-eslint/parser',
     },
