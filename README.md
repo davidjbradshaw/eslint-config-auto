@@ -48,11 +48,13 @@ The [eslint-config-adjunct](https://github.com/davidjbradshaw/eslint-config-adju
 
 ### Babel
 
-If the project includes Babel, then [eslint-plugin-babel]() will be loaded and the parser will be set to `babel-eslint`.
+If the project includes Babel in it's `devDependcies`, then [eslint-plugin-babel](https://github.com/babel/eslint-plugin-babel) and [eslint-config-airbnb-babel](https://github.com/davidjbradshaw/eslint-config-airbnb-babel) will be loaded and the parser will be set to `babel-eslint`.
+
+Some project setup utils, such as [Create React App](https://github.com/facebook/create-react-app), use Babel without including it as a project dependancy. In such cases you can turn Babel support on by adding `settings: { babel: true }` to your `.eslintrc` config file.
 
 ### Compat
 
-If no transpiler is detected and `env.browser = true` in your `.eslintrc`, then [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat) is loaded.
+If `settings.compat = true` in your `.eslintrc`, then [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat) is loaded.
 
 ### Node
 
@@ -70,6 +72,7 @@ If prettier is installed, any rules that may conflict with Prettier will be disa
 - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
 
 The prettier configs for different eslint plugins are also automatically included based on which eslint plugins have been installed into your project.
+
 ### TypeScript
 
-If the project includes TypeScript, then the rules will adapt to lint typescipt files and the parser will be set to `@typescript-eslint/parser` for `ts` and `tsx` filetypes.
+If the project includes TypeScript, then the rules will adapt to lint typescript files and the parser will be set to `@typescript-eslint/parser` for `ts` and `tsx` filetypes.
