@@ -9,10 +9,19 @@ console.log(configs.map((config) => `  eslint-config-${config}`).join('\n'))
 module.exports = {
   overrides: [
     {
-      files: ['*.ts', '**/*.ts', '*.tsx', '**/*.tsx'],
+      files: ['*.ts', '*.tsx'],
       extends: configs,
       rules: {
-        '@typescript-eslint/naming-convention': 0, // conflicts with unicorn
+        '@typescript-eslint/naming-convention': 'off', // conflicts with unicorn
+        '@typescript-eslint/explicit-function-return-type': [
+          'error',
+          {
+            allowExpressions: true,
+            allowTypedFunctionExpressions: true,
+            allowHigherOrderFunctions: true,
+            allowConciseArrowFunctionExpressionsStartingWithVoid: true,
+          },
+        ],
       },
     },
   ],
