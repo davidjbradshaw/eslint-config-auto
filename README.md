@@ -45,7 +45,7 @@ The most appropreate version of the AirBNB eslint config will be automatically s
 
 If the project includes Babel in it's `devDependcies`, then [eslint-plugin-babel](https://github.com/babel/eslint-plugin-babel) and [eslint-config-airbnb-babel](https://github.com/davidjbradshaw/eslint-config-airbnb-babel) will be loaded and the parser will be set to `babel-eslint`.
 
-Some project setup utils, such as [Create React App](https://github.com/facebook/create-react-app), use Babel without including it as a project dependancy. In such cases you can turn Babel support on by adding `settings: { babel: true }` to your `.eslintrc` config file.
+Some project setup utils, such as [Create React App](https://github.com/facebook/create-react-app), use Babel without including it as a project dependancies. In such cases you can turn Babel support on by adding `settings: { babel: true }` to your `.eslintrc` config file.
 
 ### Code Quality
 
@@ -60,11 +60,14 @@ If `settings.compat = true` in your `.eslintrc`, then [eslint-plugin-compat](htt
 
 ### Langauges
 
-The following plugins expand esLint to work with json files, and lint JavaScript contiained in HTML and MarkDown:
+The following plugins expand esLint to support TypeScript, JSON, and lint code contiained in HTML and MarkDown files:
 
-- [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html)
+- [@eslint-typescript](https://github.com/typescript-eslint/typescript-eslint)
 - [eslint-plugin-json](https://github.com/azeemba/eslint-plugin-json)
+- [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html)
 - [eslint-plugin-markdown](https://github.com/eslint/eslint-plugin-markdown)
+
+_If the project includes TypeScript, then the rules will adapt to lint typescript files and the parser will be set to `@typescript-eslint/parser` for `ts` and `tsx` filetypes._
 
 _When linting code snippets in Markdown files, a few [rules](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/rules/markdown.js#L3) relating to globals and unused vars are disabled._
 
@@ -134,11 +137,7 @@ Test plugins are loaded based on which testing tools you have listed in `devDepe
 - [eslint-plugin-qunit](https://github.com/platinumazure/eslint-plugin-qunit)
 - [eslint-plugin-cypress](https://github.com/cypress-io/eslint-plugin-cypress)
 
-_For test files a few [rules](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/rules/test-overrides.js) are turned off, to better to support normal unit test code styles._
-
-### TypeScript
-
-If the project includes TypeScript, then the rules will adapt to lint typescript files and the parser will be set to `@typescript-eslint/parser` for `ts` and `tsx` filetypes.
+_For test files a few [rules](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/rules/test-overrides.js) are turned off, to better to support normal unit test coding styles._
 
 ## Rules
 
