@@ -1,7 +1,7 @@
+const { settings = {} } = require('../lib/config')
 const { hasAnyDep } = require('../lib/utils')
-const isModuleAvailable = require('../lib/is-module-available')
 
-const hasBabel = isModuleAvailable('babel') || isModuleAvailable('@babel/core')
+const hasBabel = hasAnyDep('babel') || hasAnyDep('@babel/core') || settings.babel
 
 const configs = []
 
