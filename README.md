@@ -1,5 +1,9 @@
 # eslint-config-auto
 
+[![NPM version](https://badge.fury.io/js/iframe-resizer.svg)](http://badge.fury.io/js/iframe-resizer)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.me/davidjbradshaw)
+
 > Automatically configure ESLint based on project dependencies
 
 This config will automatically configure the *airbnb* esLint rules and a range of other plugins, based on the contents of your projects `package.json` file.
@@ -131,13 +135,14 @@ Test plugins are loaded based on which testing tools you have listed in `devDepe
 - [eslint-plugin-ava](https://github.com/avajs/eslint-plugin-ava)
 - [eslint-plugin-chai-expect](https://github.com/turbo87/eslint-plugin-chai-expect)
 - [eslint-plugin-chai-friendly](https://github.com/ihordiachenko/eslint-plugin-chai-friendly)
+- [eslint-plugin-cypress](https://github.com/cypress-io/eslint-plugin-cypress)
 - [eslint-plugin-jasmine](https://github.com/tlvince/eslint-plugin-jasmine)
 - [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest)
 - [eslint-plugin-jest-async](https://www.npmjs.com/package/eslint-plugin-jest-async)
 - [eslint-plugin-mocha](https://github.com/lo1tuma/eslint-plugin-mocha)
 - [eslint-plugin-mocha-cleanup](https://github.com/onechiporenko/eslint-plugin-mocha-cleanup/)
 - [eslint-plugin-qunit](https://github.com/platinumazure/eslint-plugin-qunit)
-- [eslint-plugin-cypress](https://github.com/cypress-io/eslint-plugin-cypress)
+- [eslint-plugin-testing-library](https://github.com/testing-library/eslint-plugin-testing-library)
 
 _For test files a few [rules](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/rules/test-overrides.js) are turned off, to better to support normal unit test coding styles._
 
@@ -177,6 +182,7 @@ The following rules are disabled due to them being considered unduly restrictive
 - lodash/prefer over native rules
 - lodash-fp/use-fp
 - unicorn/no-fn-reference-in-iterator
+- unicorn/no-array-for-each
 - unicorn/no-reduce
 - unicorn/no-null
 - unicorn/prefer-number-properties
