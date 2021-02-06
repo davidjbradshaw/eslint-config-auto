@@ -16,4 +16,7 @@ console.log(configs.map((config) => `  eslint-config-${config}`).join('\n'))
 
 module.exports = {
   extends: configs,
+  rules: {
+    'react/jsx-no-constructed-context-values': 0,
+  },
 }
