@@ -1,6 +1,8 @@
 # eslint-config-auto
 
-> This config will automatically configure the *airbnb* esLint rules and a range of other plugins, based on the contents of your projects `package.json` file.
+> Automatically configure ESLint based on project dependencies
+
+This config will automatically configure the *airbnb* esLint rules and a range of other plugins, based on the contents of your projects `package.json` file.
 
 ## Install
 
