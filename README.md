@@ -1,4 +1,8 @@
-# eslint-config-auto &nbsp; [![NPM version](https://badge.fury.io/js/eslint-config-auto.svg)](http://badge.fury.io/js/eslint-config-auto) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.me/davidjbradshaw)
+# eslint-config-auto 
+
+[![NPM version](https://badge.fury.io/js/eslint-config-auto.svg)](http://badge.fury.io/js/eslint-config-auto)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.me/davidjbradshaw)
 
 > Automatically configure ESLint based on project dependencies
 
