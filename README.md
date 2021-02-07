@@ -2,7 +2,9 @@
 
 > Automatically configure ESLint based on project dependencies
 
-This config will automatically configure the *airbnb* esLint rules and a range of other plugins, based on the contents of your projects `package.json` file.
+This project got created because I got tired of managing eslint in multiple different projects and trying to keep them all vaguely in sync. It will automatically configure the *airbnb* eslint rules and a wide range of plugins that are normally to much bother to setup. This is all done based on the contents of your projects `package.json` file, each time you run eslint, this means that if you add a new library to your project, the associated, plugin will get automatically included.
+
+The aim here is to include a wide range of genuinely useful plugins, whilst not being overly restrictive. So whilst the recommended configs for each plugin are used, a few rules that seem unduely restrictive have been [turned off](https://github.com/davidjbradshaw/eslint-config-auto#rules-1). If you use Prettier then all the formating rules are also disabled by including [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier).
 
 ## Install
 
