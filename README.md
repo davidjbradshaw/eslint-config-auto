@@ -4,7 +4,7 @@
 
 This project got created because I got tired of managing [eslint](https://eslint.org) in multiple different projects and trying to keep them all vaguely in sync. It will automatically configure the [airbnb eslint rules](https://github.com/airbnb/javascript) and a curated selection of [plugins](https://github.com/davidjbradshaw/eslint-config-auto#rules) that are normally too much bother to setup. This is done based on the contents of your projects `package.json` file each time you run eslint, so that if you add a new library to your project, the associated plugin will get automatically included.
 
-The aim here is to include a range of *mostly reasonable* plugins, whilst not being overly restrictive. The recommended configs for each plugin are used with a few exceptions for rules that seem unduely restrictive. These have been [disabled](https://github.com/davidjbradshaw/eslint-config-auto#rules-1). If you use Prettier then all the formating rules are also omitted by including [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier).
+The aim here is to include a range of *mostly reasonable* plugins, whilst not being overly restrictive. The recommended configs for each plugin are used with a few exceptions for rules that seem unduely restrictive, these have been [disabled](https://github.com/davidjbradshaw/eslint-config-auto#rules-1). If you use Prettier then all the formating rules are also omitted by including [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier).
 
 In addition to JavaScript, suport is included for linting TypeScript, HTML, Json, and MarkDown files.
 
