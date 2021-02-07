@@ -14,7 +14,7 @@ Suggestions for adding new plugings will be carefully considered against the *mo
 
 ## Alternative
 
-If you like the ideas behind this config, but not the AirBnb styleguide, then checkout [eslint-config-adjunt](https://github.com/davidjbradshaw/eslint-config-adjunct). It includes most of the extra plugins used here, but lets you choose your prefered main eslint config.
+If you like the ideas behind this config, but not the AirBnB styleguide, then checkout [eslint-config-adjunt](https://github.com/davidjbradshaw/eslint-config-adjunct). It includes most of the extra plugins used here, but lets you choose your prefered main eslint config.
 
 ## Install
 
