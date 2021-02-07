@@ -2,7 +2,7 @@
 
 > Automatically configure ESLint based on project dependencies
 
-This project got created because I got tired of managing eslint in multiple different projects and trying to keep them all vaguely in sync. It will automatically configure the [airbnb eslint rules](https://github.com/airbnb/javascript) and a wide range of plugins that are normally too much bother to setup. This is all done based on the contents of your projects `package.json` file each time you run eslint, this means that if you add a new library to your project, the associated plugin will get automatically included.
+This project got created because I got tired of managing [eslint](https://eslint.org) in multiple different projects and trying to keep them all vaguely in sync. It will automatically configure the [airbnb eslint rules](https://github.com/airbnb/javascript) and a wide range of plugins that are normally too much bother to setup. This is all done based on the contents of your projects `package.json` file each time you run eslint, this means that if you add a new library to your project, the associated plugin will get automatically included.
 
 The aim here is to include a wide range of *mostly reasonable* plugins, whilst not being overly restrictive. The recommended configs for each plugin are used, with a few exceptions that seem unduely restrictive and have been [turned off](https://github.com/davidjbradshaw/eslint-config-auto#rules-1). If you use Prettier then all the formating rules are also disabled by including [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier).
 
@@ -10,7 +10,7 @@ In addition to JavaScript, suport is included for linting TypeScript, HTML, Json
 
 ## Contibuting
 
-Suggestions for adding new plugings will be carefully considered, but they will need to meet the *mostly reasonable* standard and genuingly useful. If you would like to help out, then I would like add support for *Vue* and other popular frameworks.
+Suggestions for adding new plugings will be carefully considered, but they will need to meet the *mostly reasonable* standard and be genuingly useful. If you would like to help out, then I would like add support for *Vue* and other popular frameworks. Thanks goes to [awesome-eslint](https://github.com/dustinspecker/awesome-eslint) for having collated the packages this project utalises.
 
 ## Install
 
