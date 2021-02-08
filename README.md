@@ -205,5 +205,5 @@ If you like the ideas behind this config, but not the AirBnB styleguide, then ch
 
 ## License
 
-Copyright &copy; 2020 [David J. Bradshaw](https://github.com/davidjbradshaw).
+Copyright &copy; 2020-21 [David J. Bradshaw](https://github.com/davidjbradshaw).
 Licensed under the [MIT License](LICENSE).
