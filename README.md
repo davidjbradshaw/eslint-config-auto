@@ -53,7 +53,7 @@ The most appropreate version of the AirBNB eslint config will be automatically s
 
 ### Babel
 
-If the project includes Babel in it's `devDependcies`, then [eslint-plugin-babel](https://github.com/babel/eslint-plugin-babel) and [eslint-config-airbnb-babel](https://github.com/davidjbradshaw/eslint-config-airbnb-babel) will be loaded and the parser will be set to `babel-eslint`.
+If the project includes Babel in it's `devDependencies`, then [eslint-plugin-babel](https://github.com/babel/eslint-plugin-babel) and [eslint-config-airbnb-babel](https://github.com/davidjbradshaw/eslint-config-airbnb-babel) will be loaded and the parser will be set to `babel-eslint`.
 
 Some project setup utils, such as [Create React App](https://github.com/facebook/create-react-app), use Babel without including it as a project dependancies. In such cases you can turn Babel support on by adding `settings: { babel: true }` to your `.eslintrc` config file.
 
