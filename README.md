@@ -99,7 +99,7 @@ If `env.node = true` in your `.eslintrc` file, then [eslint-plugin-node](https:/
 
 ### React
 
-If a project contians React, then a React version of the AirBNB config will be used and if Redux is installed the following extra plugins will be loaded.
+If a project contains React, then a React version of the AirBNB config will be used and if Redux is installed the following extra plugins will be loaded.
 
 - [eslint-plugin-fsa](https://github.com/joseph-galindo/eslint-plugin-fsa)
 - [eslint-plugin-react-redux](https://github.com/DianaSuvorova/eslint-plugin-react-redux#readme)
