@@ -8,6 +8,10 @@ The aim here is to include a range of *mostly reasonable* plugins, whilst not be
 
 In addition to JavaScript, suport is included for linting TypeScript, HTML, Json, and MarkDown files.
 
+## Alternative
+
+If you like the ideas behind this config, but not the AirBnB styleguide, then checkout [eslint-config-adjunt](https://github.com/davidjbradshaw/eslint-config-adjunct). It includes most of the extra plugins used here, but lets you choose your prefered main eslint config.
+
 ## Contibuting
 
 Suggestions for adding new plugings will be carefully considered against the *mostly reasonable* standard and usefulness. If you would like to help out, then I would like to add support for *Vue* and other popular frameworks. Thanks goes to [awesome-eslint](https://github.com/dustinspecker/awesome-eslint) for having collated the packages this project utalises.
@@ -198,10 +202,6 @@ The following rules are disabled due to clashing with other plugins
 - array-func/prefer-array-from
 - import/order
 - sort-imports
-
-## Alternative
-
-If you like the ideas behind this config, but not the AirBnB styleguide, then checkout [eslint-config-adjunt](https://github.com/davidjbradshaw/eslint-config-adjunct). It includes most of the extra plugins used here, but lets you choose your prefered main eslint config.
 
 ## License
 
