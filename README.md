@@ -1,6 +1,20 @@
-# eslint-config-auto
+# eslint-config-auto &nbsp;[![NPM version](https://badge.fury.io/js/eslint-config-auto.svg)](http://badge.fury.io/js/eslint-config-auto) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-This config will automatically configure the *airbnb* esLint rules and a range of other plugins, based on the contents of your projects `package.json` file.
+> Automatically configure ESLint based on project dependencies
+
+This project got created because I got tired of managing [eslint](https://eslint.org) in multiple different projects and trying to keep them all vaguely in sync. It will automatically configure the most appropreate version of the [airbnb eslint rules](https://github.com/airbnb/javascript) and a curated selection of [plugins](https://github.com/davidjbradshaw/eslint-config-auto#rules) based on the contents of your project's `package.json` file each time you run eslint. When you add a new library to your project, the associated plugin will get automatically included.
+
+The aim here is to include a range of *mostly reasonable* plugins, whilst not being overly restrictive. The recommended configs for each plugin are used with a few exceptions for rules that have been [disabled](https://github.com/davidjbradshaw/eslint-config-auto#rules-1) for appearing unduely restrictive or conflicting with other plugins. If you use Prettier then all the formating rules are also omitted by including [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier).
+
+In addition to JavaScript, suport is included for linting TypeScript, HTML, Json, and MarkDown files.
+
+## Alternative
+
+If you like the ideas behind this config, but not the AirBnB styleguide, then checkout [eslint-config-adjunt](https://github.com/davidjbradshaw/eslint-config-adjunct). It includes most of the extra plugins used here, but lets you choose your prefered main eslint config.
+
+## Contibuting
+
+Suggestions for adding new plugings will be carefully considered against the *mostly reasonable* standard and usefulness. If you would like to help out, then I would like to add support for *Vue* and other popular frameworks. Thanks goes to [awesome-eslint](https://github.com/dustinspecker/awesome-eslint) for having collated the packages this project utalises.
 
 ## Install
 
@@ -43,7 +57,7 @@ The most appropreate version of the AirBNB eslint config will be automatically s
 
 ### Babel
 
-If the project includes Babel in it's `devDependcies`, then [eslint-plugin-babel](https://github.com/babel/eslint-plugin-babel) and [eslint-config-airbnb-babel](https://github.com/davidjbradshaw/eslint-config-airbnb-babel) will be loaded and the parser will be set to `babel-eslint`.
+If the project includes Babel in it's `devDependencies`, then [eslint-plugin-babel](https://github.com/babel/eslint-plugin-babel) and [eslint-config-airbnb-babel](https://github.com/davidjbradshaw/eslint-config-airbnb-babel) will be loaded and the parser will be set to `babel-eslint`.
 
 Some project setup utils, such as [Create React App](https://github.com/facebook/create-react-app), use Babel without including it as a project dependancies. In such cases you can turn Babel support on by adding `settings: { babel: true }` to your `.eslintrc` config file.
 
@@ -85,7 +99,7 @@ If `env.node = true` in your `.eslintrc` file, then [eslint-plugin-node](https:/
 
 ### React
 
-If a project contians React, then a React version of the AirBNB config will be used and if Redux is installed the following extra plugins will be loaded.
+If a project contains React, then a React version of the AirBNB config will be used and if Redux is installed the following extra plugins will be loaded.
 
 - [eslint-plugin-fsa](https://github.com/joseph-galindo/eslint-plugin-fsa)
 - [eslint-plugin-react-redux](https://github.com/DianaSuvorova/eslint-plugin-react-redux#readme)
@@ -129,13 +143,14 @@ Test plugins are loaded based on which testing tools you have listed in `devDepe
 - [eslint-plugin-ava](https://github.com/avajs/eslint-plugin-ava)
 - [eslint-plugin-chai-expect](https://github.com/turbo87/eslint-plugin-chai-expect)
 - [eslint-plugin-chai-friendly](https://github.com/ihordiachenko/eslint-plugin-chai-friendly)
+- [eslint-plugin-cypress](https://github.com/cypress-io/eslint-plugin-cypress)
 - [eslint-plugin-jasmine](https://github.com/tlvince/eslint-plugin-jasmine)
 - [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest)
 - [eslint-plugin-jest-async](https://www.npmjs.com/package/eslint-plugin-jest-async)
 - [eslint-plugin-mocha](https://github.com/lo1tuma/eslint-plugin-mocha)
 - [eslint-plugin-mocha-cleanup](https://github.com/onechiporenko/eslint-plugin-mocha-cleanup/)
 - [eslint-plugin-qunit](https://github.com/platinumazure/eslint-plugin-qunit)
-- [eslint-plugin-cypress](https://github.com/cypress-io/eslint-plugin-cypress)
+- [eslint-plugin-testing-library](https://github.com/testing-library/eslint-plugin-testing-library)
 
 _For test files a few [rules](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/rules/test-overrides.js) are turned off, to better to support normal unit test coding styles._
 
@@ -175,6 +190,7 @@ The following rules are disabled due to them being considered unduly restrictive
 - lodash/prefer over native rules
 - lodash-fp/use-fp
 - unicorn/no-fn-reference-in-iterator
+- unicorn/no-array-for-each
 - unicorn/no-reduce
 - unicorn/no-null
 - unicorn/prefer-number-properties
@@ -189,5 +205,5 @@ The following rules are disabled due to clashing with other plugins
 
 ## License
 
-Copyright &copy; 2020 [David J. Bradshaw](https://github.com/davidjbradshaw).
+Copyright &copy; 2020-21 [David J. Bradshaw](https://github.com/davidjbradshaw).
 Licensed under the [MIT License](LICENSE).
