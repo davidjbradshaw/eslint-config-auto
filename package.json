@@ -64,7 +64,7 @@
     "eslint-plugin-lodash-fp": "^2.2.0-a1",
     "eslint-plugin-markdown": "^1.0.2",
     "eslint-plugin-no-constructor-bind": "^2.0.4",
-    "eslint-plugin-no-secrets": "^0.6.8",
+    "eslint-plugin-no-secrets": "^0.8.9",
     "eslint-plugin-no-unsanitized": "^3.1.4",
     "eslint-plugin-no-use-extend-native": "^0.5.0",
     "eslint-plugin-node": "^11.1.0",
