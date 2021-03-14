@@ -1,14 +1,11 @@
-const { settings = {} } = require('../lib/config')
-const { hasAnyDep } = require('../lib/utils')
-
-const hasBabel = hasAnyDep('babel') || hasAnyDep('@babel/core') || settings.babel
+const { hasBabel, hasTypeScript, hasReact } = require('../lib/hasPackage')
 
 const configs = []
 
-if (hasAnyDep('typescript')) configs.push('@typescript-eslint/eslint-plugin')
+if (hasTypeScript) configs.push('@typescript-eslint/eslint-plugin')
 
-configs.push(hasAnyDep('react') ? 'airbnb' : 'airbnb-base')
-if (hasAnyDep('typescript')) configs.push('airbnb-typescript')
+configs.push(hasReact ? 'airbnb' : 'airbnb-base')
+if (hasTypeScript) configs.push('airbnb-typescript')
 if (hasBabel) configs.push('airbnb-babel')
 
 configs.push('adjunct')

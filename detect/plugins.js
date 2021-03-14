@@ -1,7 +1,5 @@
 const { env = {}, settings = {} } = require('../lib/config')
-
 const { hasAnyDep } = require('../lib/utils')
-
 const { hasBabel } = require('../lib/hasPackage')
 
 const plugins = []
