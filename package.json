@@ -33,7 +33,7 @@
   "dependencies": {
     "arrify": "^2.0.1",
     "cosmiconfig": "^7.0.0",
-    "eslint-config-adjunct": ">=4.10.0",
+    "eslint-config-adjunct": ">=4.11.0",
     "eslint-config-airbnb-base": ">=14.2.1",
     "lodash": "^4.17.21",
     "mkdir": "0.0.2",

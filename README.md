@@ -4,7 +4,7 @@
 
 This project got created because I got tired of managing [eslint](https://eslint.org) in multiple different projects and trying to keep them all vaguely in sync. It will automatically configure the most appropreate version of the [airbnb eslint rules](https://github.com/airbnb/javascript) and a curated selection of [plugins](https://github.com/davidjbradshaw/eslint-config-auto#rules) based on the contents of your project's `package.json` file each time you run eslint. When you add a new library to your project, the associated plugin will get automatically included.
 
-The aim here is to include a range of *mostly reasonable* plugins, whilst not being overly restrictive. The recommended configs for each plugin are used with a few exceptions for rules that have been [disabled](https://github.com/davidjbradshaw/eslint-config-auto#rules-1) for appearing unduely restrictive or conflicting with other plugins. If you use Prettier then all the formating rules are also omitted by including [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier).
+The aim here is to include a range of _mostly reasonable_ plugins, whilst not being overly restrictive. The recommended configs for each plugin are used with a few exceptions for rules that have been [disabled](https://github.com/davidjbradshaw/eslint-config-auto#rules-1) for appearing unduely restrictive or conflicting with other plugins. If you use Prettier then all the formating rules are also omitted by including [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier).
 
 In addition to JavaScript, suport is included for linting TypeScript, HTML, Json, and MarkDown files.
 
@@ -14,7 +14,7 @@ If you like the ideas behind this config, but not the AirBnB styleguide, then ch
 
 ## Contibuting
 
-Suggestions for adding new plugings will be carefully considered against the *mostly reasonable* standard and usefulness. If you would like to help out, then I would like to add support for *Vue* and other popular frameworks. Thanks goes to [awesome-eslint](https://github.com/dustinspecker/awesome-eslint) for having collated the packages this project utalises.
+Suggestions for adding new plugings will be carefully considered against the _mostly reasonable_ standard and usefulness. If you would like to help out, then I would like to add support for _Vue_ and other popular frameworks. Thanks goes to [awesome-eslint](https://github.com/dustinspecker/awesome-eslint) for having collated the packages this project utalises.
 
 ## Install
 
@@ -123,7 +123,6 @@ The following esLint plugins enforce good coding practices:
 If prettier is installed, any rules that may conflict with Prettier will be disabled. The plugin should read you Prettier config from your project's root.
 
 - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
-- [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
 
 The prettier configs for different eslint plugins are also automatically included based on which eslint plugins have been installed into your project.
 
@@ -189,6 +188,7 @@ The following rules are disabled due to them being considered unduly restrictive
 - redux-saga/no-unhandled-errors
 - lodash/prefer over native rules
 - lodash-fp/use-fp
+- unicorn/no-array-for-each
 - unicorn/no-fn-reference-in-iterator
 - unicorn/no-array-for-each
 - unicorn/no-reduce
