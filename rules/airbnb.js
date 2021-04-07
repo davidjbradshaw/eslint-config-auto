@@ -18,5 +18,6 @@ module.exports = {
   extends: configs,
   rules: {
     'react/jsx-no-constructed-context-values': 0,
+    'react/no-unstable-nested-components': 0,
   },
 }
