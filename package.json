@@ -80,7 +80,7 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-sonarjs": "^0.6.0",
     "eslint-plugin-switch-case": "^1.1.2",
-    "eslint-plugin-unicorn": "^29.0.0",
+    "eslint-plugin-unicorn": "^34.0.1",
     "husky": "^6.0.0",
     "in-publish": "^2.0.1",
     "prettier": "^2.2.1",
