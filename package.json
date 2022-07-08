@@ -31,7 +31,7 @@
     "unicorn"
   ],
   "dependencies": {
-    "arrify": "^2.0.1",
+    "arrify": "^3.0.0",
     "cosmiconfig": "^7.0.1",
     "eslint-config-adjunct": ">=4.11.2",
     "eslint-config-airbnb-base": ">=15.0.0",
