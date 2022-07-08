@@ -1,7 +1,10 @@
 {
   "extends": ["./index.js"],
   "rules": {
-    "security/detect-non-literal-fs-filename": "off"
+    "security/detect-non-literal-fs-filename": 0,
+    "unicorn/prevent-abbreviations": 0,
+    "unicorn/prefer-module": 0,
+    "unicorn/prefer-node-protocol": 0
   },
   "env": {
     "es6": true,
