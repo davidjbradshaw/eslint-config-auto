@@ -20,7 +20,7 @@
     "eslint": "eslint --color  *.{js,json,md} rules/** lib/**",
     "eslint:fix": "eslint --color --fix  *.{js,md} rules/** lib/**",
     "eslint:print": "eslint --print-config ./tsconfig.json",
-    "prepublishOnly": "eslint-find-rules --unused --no-core",
+    "prepublishOnly": "eslint-find-rules --no-core",
     "test": "npm run eslint && npm run prepublishOnly"
   },
   "keywords": [
