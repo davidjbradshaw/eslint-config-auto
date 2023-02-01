@@ -78,7 +78,7 @@
     "eslint-plugin-scanjs-rules": "^0.2.1",
     "eslint-plugin-security": "^1.5.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-sonarjs": "^0.13.0",
+    "eslint-plugin-sonarjs": "^0.18.0",
     "eslint-plugin-switch-case": "^1.1.2",
     "eslint-plugin-unicorn": "^43.0.1",
     "husky": "^8.0.1",
