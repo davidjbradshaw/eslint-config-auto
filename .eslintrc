@@ -1,6 +1,7 @@
 {
   "extends": ["./index.js"],
   "rules": {
+    "sonarjs/no-nested-template-literals": 0,
     "security/detect-non-literal-fs-filename": 0,
     "unicorn/prevent-abbreviations": 0,
     "unicorn/prefer-module": 0,

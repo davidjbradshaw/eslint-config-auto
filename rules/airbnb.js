@@ -1,9 +1,9 @@
 const isModuleAvailable = require('../lib/is-module-available')
 
-const hooks = 'airbnb/hooks'
+const HOOKS = 'airbnb/hooks'
 const configs = ['airbnb']
 
-if (isModuleAvailable(`eslint-config-${hooks}`)) configs.push(hooks)
+if (isModuleAvailable(`eslint-config-${HOOKS}`)) configs.push(HOOKS)
 else {
   // eslint-disable-next-line no-console
   console.warn(
