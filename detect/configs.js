@@ -2,7 +2,7 @@ const { hasBabel, hasTypeScript, hasReact } = require('../lib/hasPackage')
 
 const configs = []
 
-if (hasTypeScript) configs.push('@typescript-eslint/eslint-plugin')
+// if (hasTypeScript) configs.push('@typescript-eslint/eslint-plugin')
 
 configs.push(hasReact ? 'airbnb' : 'airbnb-base')
 if (hasTypeScript) configs.push('airbnb-typescript')
